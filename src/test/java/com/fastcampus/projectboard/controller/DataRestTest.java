@@ -1,5 +1,6 @@
 package com.fastcampus.projectboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 
+@Disabled("Spring Data REST 통합테스트는 불필요하므로 제외시킴")
 // @WebMvcTest 어노테이션으로 엔드포인트 테스트를 했더니 실패했다. 왜냐하면 WebMvcTest가 슬라이스 테스트이기 때문에 컨트롤러 외의 빈들을 로드하지 않는다.
 // 즉, DataRest의 autoConfiguration을 읽지 않는 것이다.
 @DisplayName("Data REST - API 테스트")
