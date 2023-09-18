@@ -25,6 +25,9 @@ spring:
   data.rest:
     base-path: /api
     detection-strategy: annotated
+  # 타임리프 캐시 설정 - 개발 끝나면 지우기
+  thymeleaf:
+    cache: false
 
 ---
 
